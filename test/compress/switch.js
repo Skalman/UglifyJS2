@@ -1,5 +1,8 @@
 constant_switch_1: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         switch (1+1) {
           case 1: foo(); break;
@@ -13,7 +16,10 @@ constant_switch_1: {
 }
 
 constant_switch_2: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         switch (1) {
           case 1: foo();
@@ -28,7 +34,10 @@ constant_switch_2: {
 }
 
 constant_switch_3: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         switch (10) {
           case 1: foo();
@@ -44,7 +53,10 @@ constant_switch_3: {
 }
 
 constant_switch_4: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         switch (2) {
           case 1:
@@ -65,7 +77,10 @@ constant_switch_4: {
 }
 
 constant_switch_5: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         switch (1) {
           case 1:
@@ -94,7 +109,10 @@ constant_switch_5: {
 }
 
 constant_switch_6: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         OUT: {
             foo();
@@ -123,7 +141,10 @@ constant_switch_6: {
 }
 
 constant_switch_7: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         OUT: {
             foo();
@@ -161,7 +182,10 @@ constant_switch_7: {
 }
 
 constant_switch_8: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         OUT: switch (1) {
           case 1:
@@ -185,7 +209,10 @@ constant_switch_8: {
 }
 
 constant_switch_9: {
-    options = { dead_code: true, evaluate: true };
+    options = {
+        dead_code : true,
+        evaluate  : true
+    };
     input: {
         OUT: switch (1) {
           case 1:
@@ -210,7 +237,9 @@ constant_switch_9: {
 }
 
 drop_default_1: {
-    options = { dead_code: true };
+    options = {
+        dead_code: true
+    };
     input: {
         switch (foo) {
           case 'bar': baz();
@@ -225,7 +254,9 @@ drop_default_1: {
 }
 
 drop_default_2: {
-    options = { dead_code: true };
+    options = {
+        dead_code: true
+    };
     input: {
         switch (foo) {
           case 'bar': baz(); break;
@@ -241,7 +272,9 @@ drop_default_2: {
 }
 
 keep_default: {
-    options = { dead_code: true };
+    options = {
+        dead_code: true
+    };
     input: {
         switch (foo) {
           case 'bar': baz();

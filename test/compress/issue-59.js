@@ -1,7 +1,7 @@
 keep_continue: {
     options = {
-        dead_code: true,
-        evaluate: true
+        dead_code : true,
+        evaluate  : true
     };
     input: {
         while (a) {

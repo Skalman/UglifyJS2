@@ -34,8 +34,8 @@ dot_properties: {
 
 dot_properties_es5: {
     options = {
-        properties: true,
-        screw_ie8: true
+        properties : true,
+        screw_ie8  : true
     };
     input: {
         a["foo"] = "bar";

@@ -1,5 +1,9 @@
 labels_1: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     input: {
         out: {
             if (foo) break out;
@@ -12,7 +16,11 @@ labels_1: {
 }
 
 labels_2: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     input: {
         out: {
             if (foo) print("stuff");
@@ -29,7 +37,11 @@ labels_2: {
 }
 
 labels_3: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     input: {
         for (var i = 0; i < 5; ++i) {
             if (i < 3) continue;
@@ -43,7 +55,11 @@ labels_3: {
 }
 
 labels_4: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     input: {
         out: for (var i = 0; i < 5; ++i) {
             if (i < 3) continue out;
@@ -57,7 +73,11 @@ labels_4: {
 }
 
 labels_5: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     // should keep the break-s in the following
     input: {
         while (foo) {
@@ -89,7 +109,11 @@ labels_6: {
 }
 
 labels_7: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     input: {
         while (foo) {
             x();
@@ -106,7 +130,11 @@ labels_7: {
 }
 
 labels_8: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     input: {
         while (foo) {
             x();
@@ -124,7 +152,11 @@ labels_8: {
 }
 
 labels_9: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     input: {
         out: while (foo) {
             x();
@@ -143,7 +175,11 @@ labels_9: {
 }
 
 labels_10: {
-    options = { if_return: true, conditionals: true, dead_code: true };
+    options = {
+        if_return    : true,
+        conditionals : true,
+        dead_code    : true
+    };
     input: {
         out: while (foo) {
             x();

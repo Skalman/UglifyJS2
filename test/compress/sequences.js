@@ -89,7 +89,9 @@ make_sequences_4: {
 }
 
 lift_sequences_1: {
-    options = { sequences: true };
+    options = {
+        sequences: true
+    };
     input: {
         foo = !(x(), y(), bar());
     }
@@ -99,17 +101,23 @@ lift_sequences_1: {
 }
 
 lift_sequences_2: {
-    options = { sequences: true, evaluate: true };
+    options = {
+        sequences : true,
+        evaluate  : true
+    };
     input: {
         q = 1 + (foo(), bar(), 5) + 7 * (5 / (3 - (a(), (QW=ER), c(), 2))) - (x(), y(), 5);
     }
     expect: {
-        foo(), bar(), a(), QW = ER, c(), x(), y(), q = 36
+        foo(), bar(), a(), QW = ER, c(), x(), y(), q = 36;
     }
 }
 
 lift_sequences_3: {
-    options = { sequences: true, conditionals: true };
+    options = {
+        sequences    : true,
+        conditionals : true
+    };
     input: {
         x = (foo(), bar(), baz()) ? 10 : 20;
     }
@@ -119,7 +127,9 @@ lift_sequences_3: {
 }
 
 lift_sequences_4: {
-    options = { side_effects: true };
+    options = {
+        side_effects: true
+    };
     input: {
         x = (foo, bar, baz);
     }
@@ -129,7 +139,9 @@ lift_sequences_4: {
 }
 
 for_sequences: {
-    options = { sequences: true };
+    options = {
+        sequences: true
+    };
     input: {
         // 1
         foo();

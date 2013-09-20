@@ -36,8 +36,8 @@ negate_iife_3: {
 
 negate_iife_3: {
     options = {
-        negate_iife: true,
-        sequences: true
+        negate_iife : true,
+        sequences   : true
     };
     input: {
         (function(){ return true })() ? console.log(true) : console.log(false);
@@ -54,9 +54,9 @@ negate_iife_3: {
 
 negate_iife_4: {
     options = {
-        negate_iife: true,
-        sequences: true,
-        conditionals: true,
+        negate_iife  : true,
+        sequences    : true,
+        conditionals : true
     };
     input: {
         if ((function(){ return true })()) {

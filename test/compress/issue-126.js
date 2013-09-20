@@ -1,8 +1,8 @@
 concatenate_rhs_strings: {
     options = {
-        evaluate: true,
-        unsafe: true,
-    }
+        evaluate : true,
+        unsafe   : true
+    };
     input: {
         foo(bar() + 123 + "Hello" + "World");
         foo(bar() + (123 + "Hello") + "World");

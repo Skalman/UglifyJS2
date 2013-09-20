@@ -1,5 +1,7 @@
 unused_funarg_1: {
-    options = { unused: true };
+    options = {
+        unused: true
+    };
     input: {
         function f(a, b, c, d, e) {
             return a + b;
@@ -13,7 +15,9 @@ unused_funarg_1: {
 }
 
 unused_funarg_2: {
-    options = { unused: true };
+    options = {
+        unused: true
+    };
     input: {
         function f(a, b, c, d, e) {
             return a + c;
@@ -27,7 +31,9 @@ unused_funarg_2: {
 }
 
 unused_nested_function: {
-    options = { unused: true };
+    options = {
+        unused: true
+    };
     input: {
         function f(x, y) {
             function g() {
@@ -44,7 +50,9 @@ unused_nested_function: {
 }
 
 unused_circular_references_1: {
-    options = { unused: true };
+    options = {
+        unused: true
+    };
     input: {
         function f(x, y) {
             // circular reference
@@ -65,7 +73,9 @@ unused_circular_references_1: {
 }
 
 unused_circular_references_2: {
-    options = { unused: true };
+    options = {
+        unused: true
+    };
     input: {
         function f(x, y) {
             var foo = 1, bar = baz, baz = foo + bar, qwe = moo();
@@ -81,7 +91,9 @@ unused_circular_references_2: {
 }
 
 unused_circular_references_3: {
-    options = { unused: true };
+    options = {
+        unused: true
+    };
     input: {
         function f(x, y) {
             var g = function() { return h() };
@@ -97,7 +109,9 @@ unused_circular_references_3: {
 }
 
 unused_keep_setter_arg: {
-    options = { unused: true };
+    options = {
+        unused: true
+    };
     input: {
         var x = {
             _foo: null,
